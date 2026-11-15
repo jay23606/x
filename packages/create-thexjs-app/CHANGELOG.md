@@ -1,5 +1,11 @@
 # create-thexjs-app
 
+## 1.3.0
+
+### Minor Changes
+
+- 22443bd: `bun create thexjs-app --auth` now scaffolds real `@thexjs/auth` (a credentials provider against a hashed-password `users` table, HMAC'd sessions, brute-force-guarded sign-in, CSRF-checked actions) instead of a hardcoded `admin`/`admin` demo with plaintext comparison and no session expiry. Adds a `/signup` page and `POST /api/auth/signup` endpoint since `defineAuth` has no "create user" API of its own.
+
 ## 1.2.3
 
 ### Patch Changes

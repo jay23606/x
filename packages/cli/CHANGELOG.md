@@ -1,5 +1,18 @@
 # @thexjs/cli
 
+## 1.2.0
+
+### Minor Changes
+
+- 6d46c47: Add `x build --adapter node`, wiring the new `@thexjs/adapter-node` package into the CLI the same way `--adapter vercel` is wired to `@thexjs/adapter-vercel` (optional peer dependency, dynamic import with a friendly error if it isn't installed).
+
+### Patch Changes
+
+- Updated dependencies [6d46c47]
+- Updated dependencies [4b1e66b]
+  - @thexjs/adapter-node@0.1.0
+  - @thexjs/core@1.10.0
+
 ## 1.1.7
 
 ### Patch Changes
